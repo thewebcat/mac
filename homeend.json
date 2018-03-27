@@ -1,0 +1,70 @@
+{
+  "title": "Fix Home and End keys",
+  "rules": [
+    {
+      "description": "Fix Home and End keys",
+      "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "end"
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "end"
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "home"
+                }
+            ]
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "home"
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "left_command"
+                    ]
+                }
+            ]
+        }
+      ]
+    }
+  ]
+}
